@@ -1,4 +1,102 @@
-$bg_color: #008787;
+$dark_primary_color: #5D4037;
+$primary_color: #795548;
+$light_primary_color: #D7CCC8;
+$accent_color: #00BCD4;
+$light_text: #FFFFFF;
+$primary_text: #212121;
+$secondary_text: #727272;
+$divider_color: #B6B6B6;
+$font: 'Ubuntu', sans-serif;
+
 body {
-    background: $bg_color;
+    background: $light_primary_color;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: $dark_primary_color;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: $font;
+}
+
+.title {
+    height: 150px;
+}
+
+.workspace {
+    background: $primary_color;
+    height: 300px;
+    padding: 25px;
+    text-align: center;
+}
+
+.download {
+    height: 100px;
+}
+
+.circle {
+    border-radius: 50%;
+    background: $accent_color;
+    height: 250px;
+    width: 250px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.editor {
+    background: transparent;
+    height: 250px;
+    display: inline-block;
+    width: 480px;
+}
+
+.form-control {
+    background: transparent;
+    border-width: 0px 0px 3px 0px;
+    border-radius: 0px;
+    font-size: 20px;
+    color: $light_text;
+    font-family: $font;
+    webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    border-color: $light_text;
+    webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn {
+    font-size: 24px;
+    font-family: $font;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding: 6px 30px;
+    font-weight: bold;
+}
+
+.btn-default:hover {
+    border-color: transparent;
+}
+
+.download {
+    padding-top: 40px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+.form-horizontal .control-label {
+    padding-top: 9px;
+    margin-bottom: -9px;
+}
+}
+
+label {
+    color: $light_text;
+    font-size: 24px;
+    font-family: $font;
+    vertical-align: bottom;
 }
